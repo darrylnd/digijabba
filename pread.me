@@ -1,0 +1,129 @@
+Installation instructions and release notes
+---------------------------------------------------------------------------
+27 May 1994----------------------------------------------------------------
+(Paul Brunk, UGA Artificial Intelligence)
+
+This archive contains Michael Covington's editor PrEd, 
+suitable for use in the Prolog2 environment.  A call to 
+edit in Prolog2 will look for an appropriate editing 
+command, just as though you had typed "edit" at the DOS
+prompt.  ESL provided the sample edit.bat.  We have modified 
+edit.bat tocall PrEd.  You may need predbw instead, 
+for monochrome screens.  PrEd contains online help, and 
+further details are in pred.doc.
+
+---------------------------------------------------------------------------
+26 May 1994----------------------------------------------------------------
+(Information added by Michael Covington, The University of Georgia)
+
+Expert Systems Ltd. is no longer in business but the author of ESL 
+Prolog, Tony Dodd (tony@dodd.demon.co.uk), is still supporting ESL 
+Prolog as best he can.  Before contacting him, please read the following information.
+
+HOW TO MAKE ESL PROLOG EDINBURGH-COMPATIBLE
+
+If you add the declaration
+
+:- state(token_class,_,dec10).
+
+at the beginning of your program, ESL Prolog will become almost 100%
+compatible with Edinburgh Prolog (described in Clocksin & Mellish's
+_Programming in Prolog_ and many other books).  
+
+Without this declaration, the main differences between ESL Prolog and
+Edinburgh (de facto standard) Prolog are:
+  - In ESL, % does not introduce a comment.
+  - In ESL, strings ("like this") are not lists of integers; they are
+a special data type.
+
+
+WHERE IS THE DOCUMENTATION?
+
+ESL Prolog is described in the following books, all of which are still
+available through any bookseller that handles special orders.
+
+Dodd, A. (1990).  _Prolog:  a logical approach_.  Oxford:  Oxford
+University Press.
+
+Dodd, Tony.  _The Prolog-2 User Guide_ and _The Prolog-2 Encyclopaedia_.
+Ablex.
+
+ESL Public Domain Prolog was created to serve as a free sample of a
+commercial product, and as such does not contain online documentation.
+
+----------------------------------------------------------------------------
+13 May 1991 ----------------------------------------------------------------
+(Original Readme file from Expert Systems Ltd.)
+
+Prolog-2 Public Domain
+
+Version 2.30 - IBM PC
+
+1. Installation on hard disk
+
+There is no special installation procedure for Prolog-2; simply make 
+a directory called, for example, PROLOG2 on your hard disk and copy 
+all the diskettes supplied into it. Then test your installation by 
+typing PROLOG2. 
+
+2. Installation on floppy disks
+
+It is also possible to run Prolog-2 from a floppy disk. Make a backup
+copy before doing this. 
+
+3. CONFIG.SYS
+
+You  must also have a file CONFIG.SYS on the disk from  which  you 
+boot DOS - you may have one already.
+
+Your CONFIG.SYS file must contain the statement
+
+FILES=20
+
+otherwise you will get system errors during startup. Once you have 
+added  this  line to the file,  reboot the machine for it to  take
+effect.
+
+4. Editor
+
+The full Prolog-2 system has an integrated editor. In this version
+a predicate edit/1 is supplied to allow files to be edited; specify
+the name of the file as an argument. The file is automatically
+reconsulted after editing. Thus
+
+?- edit(foo).
+
+edits FOO.PRO and reconsults it. edit/1 works by invoking a batch
+file EDIT.BAT with the file as argument. A sample EDIT.BAT that invokes
+WordStar is supplied; edit it to invoke your normal editor. Note that
+only 128000 bytes are free for editing. If you need more, the form
+
+?- edit(foo,200000).
+
+for example will free 200000 bytes of memory.
+
+5. Legalese
+
+This Prolog system is the freeware version of Prolog-2 from Expert
+Systems Ltd. You are encouraged to copy this disk, subject to the
+restriction that you must not delete or change any of the supplied
+files without the permission of ESL (on the other hand, if you want to
+ship your own Prolog program you are free to add files).
+
+There is no registration fee for this version of Prolog-2, and the
+product is not supported. But if you upgrade to another version
+of Prolog-2 you can use the ESL bulletin board or the help line to
+report problems and request new versions.
+
+This public domain was originally developed for the Open University
+to be shipped with their MIKE Expert System. Their help and advice
+in assembling this package is gratefully acknowledged.
+
+
+Expert Systems Ltd
+Unit 12
+7 West Way
+Oxford OX2 0JB
+UK
++44 865 794474
+

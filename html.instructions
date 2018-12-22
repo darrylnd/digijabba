@@ -1,0 +1,87 @@
+%%% A TEMPLATE TOP LEVEL PERSONAL WEB PAGE : ~xxx/public_html/index.html
+%%% This file is now in ~dnd/public_html/index.html
+%%% May later be moved to /bham/doc/html/index.html
+%%% Last updated Mon Jun 19 22:16:51 BST 1995
+%%%
+%%% Instructions:
+%%% 1. Create a directory ~/public_html if you don't have one already.
+%%%     mkdir ~/public_html
+%%% 2. Copy this to your file ~/public_html/index.html
+%%%     cp ~axs/index.html ~/public_html
+%%% 3. Copy all the instruction lines starting %%%, down to the line
+%%%     specifying the END OF INSTRUCTIONS, into another file,
+%%%     and delete them from this file.
+%%% 4. Then in the remaining index.html file:
+%%%     Search for XXX and edit in your personal information,
+%%%         e.g. phone no and email address.
+%%%     Delete or modify portions that are irrelevant to you.
+%%%     Delete all the lines containing "%%%" - They are instructions.
+%%%
+%%% A few hints on HTML files.
+%%% 1. For line break use <BR>. For a paragraph break use <P>.
+%%% 2. For a main heading use <H1> HEADING TEXT </H1>
+%%% 3. For sub-headings use <H2> HEADING TEXT </H2>
+%%%    For sub-sub-headings use <H3> HEADING TEXT </H3>
+%%%         And so on down to <H5> ... </H5>
+%%% 4. For a cross reference using URL (UUUUU) with text label (TTTT)
+%%%     use the Anchor:
+%%%         <A HREF="http://UUUUU"> TTTT </A>
+%%%     If it's an ftp reference replace "http" with "ftp"
+%%%     If it's gopher use "gopher" instead.
+%%% 5. To refer to a file in the same directory just put the file name
+%%%     in quotes, e.g. <A HREF="myfile.html"> My File </A>
+%%%     If you include a reference to a file whose name does not end in
+%%%     .html, then you can use plain text, as it will not be formatted.
+%%%     To not use more than about 60-70 columns in pre-formatted files.
+%%% 6. For emphasised text use
+%%%         <STRONG> ...TTTTT... </STRONG>
+%%%      or <B> .... BOLD TEXT.... </B>
+%%%      or <I> .... ITALIC TEXT ... </I>
+%%%      or <U> .... UNDERLINED TEXT ... </U>
+%%%      or <TT> .... TypeWriter Typeface ... </TT>
+%%%    (Some of the above may come out the same on the screen.)
+%%% 7. For pre-formatted text (best no more than about 60 columns wide)
+%%%    start with <PRE> and end with </PRE>
+%%% 8. For numbered lists use <OL> ... list items ... </OL>
+%%%         <OL>
+%%%             <LI> Item one.
+%%%             <LI> Item two.
+%%%         </OL> <!-- after last item -->
+%%%    Use "UL" instead of "OL" for unnumbered lists.
+%%% 9. For Horizontal line use <HR>
+%%% 10. If you want a comment in your text that is not to be displayed
+%%%     use this format: <!-- ....INVISIBLE TEXT.... -->
+%%%
+%%% For lots more info see:  /bham/doc/html/html-quick
+%%%
+%%% All the formatting instructions can be lower case instead of
+%%%    upper, e.g. <b>..</b> <h2>..</h2>, <br>, <P>, <a ....> </a>, etc.
+%%%
+%%% For VED users, I can provide some editing tools to help.
+%%%
+%%% You can use the latex2html command to convert latex files to html.
+%%%
+%%% It is VERY easy to make mistakes.
+%%% A quick way to check your html file (except for graphics), is to
+%%%   run lynx on it. I.e. type, to Unix:   lynx file.html
+%%%     Use UP DOWN arrow keys to traverse the file
+%%%     Use RIGHT LEFT to follow links or return.
+%%%     Type "q" to quit Lynx.
+%%% see "MAN LYNX" or "lynx -help"
+%%%
+%%% The directory /bham/doc/html has a lot of information about html
+%%%     Overview is in /bham/doc/html/README
+%%%     Quick summary in    /bham/doc/html/html-quick
+%%%
+%%% Tip from Andy Wood: Also look at Composing Good HTML guide at:
+%%%         http://www.willamette.edu/html-composition/strict-html.html
+%%%     and the HTML specifications at:
+%%%         http://www.w3.org/hypertext/WWW/MarkUp/MarkUp.html
+%%%
+%%% Final warning: Not everyone agrees with the style used here. Think
+%%% hard and choose your own style, remembering that some people are
+%%% colour blind, that some people have expectations and preferences
+%%% that may be different from your own. Have fun.
+%%% Aaron Sloman 18 Jun 1995
+%%% Sample template for your ~XXX/public_html/index.html  follows.
+%%% *************END OF INSTRUCTIONS*************** <BR>
